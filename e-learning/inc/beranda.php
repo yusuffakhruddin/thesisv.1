@@ -13,7 +13,7 @@ if(@$_GET['hal'] == '') { ?>
         <div class="col-md-12">
             <div class="alert alert-success">
                 Hai, <?php echo $data_terlogin['nama_lengkap']; ?>.<br />
-                Selamat datang di e-learning SMK Indonesia.<br />
+                Selamat datang di Media Pembelajaran SMA Negeri 1 Sumber Lawang<br />
                 Silahkan pilih menu sesuai kebutuhan Anda, jika ada yang kurang jelas silahkan bertanya kepada administrator atau guru yang bersangkutan.
             </div>
         </div>
@@ -109,7 +109,7 @@ if(@$_GET['hal'] == '') { ?>
         <tr>
                         <td>Foto</td>
                         <td>:</td>
-                        <td><img src="./img/foto_siswa/<?php echo $data['foto']; ?>" width="300px" /></td>
+                        <td><img src="./img/foto_siswa/<?php echo $data['foto']; ?>" width="300px" height="300" /></td>
                     </tr>
             </table>
         </div>
@@ -171,7 +171,7 @@ if(@$_GET['hal'] == '') { ?>
                         echo '<option value="'.$i.'">'.$i.'</option>';
                     } ?>
                 </select>
-                Foto : <br /><img src="./img/foto_siswa/<?php echo $data['foto']; ?>" width="300px" height="600px" style="margin-bottom:5px;" /><input type="file" name="gambar" class="form-control" />
+                Foto : <br /><img src="./img/foto_siswa/<?php echo $data['foto']; ?>" width="200px" height="200px" style="margin-bottom:5px;" /><input type="file" name="gambar" class="form-control" />
                 Username* : <input type="text" name="user" value="<?php echo $data['username']; ?>" class="form-control" required />
                 Password* : <input type="text" name="pass" value="<?php echo $data['pass']; ?>" class="form-control" required />
                 <hr />
