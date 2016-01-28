@@ -7,10 +7,23 @@ if(@$_SESSION['admin'] || @$_SESSION['pengajar']) {
 <!DOCTYPE html>
 <html>
 <head>
-    
-    <script src="style/assets/ckeditor/styles.js"></script>
-    <script src="style/assets/ckeditor/plugins/imagebrowser/browser/jquery-1.9.1.min.js"></script>
-    <script src="style/assets/ckeditor/plugins/imagebrowser/browser/browser.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><?php cek_session("Halaman Administrator", "Halaman Pengajar"); ?> e-Learning</title>
+    <link href="style/assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="style/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="style/assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="style/assets/css/custom-styles.css" rel="stylesheet" />
+    <link href='style/assets/css/font-opensans.css' rel='stylesheet' />
+    <link href="style/assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+    <link href="style/assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <link href="style/assets/wyswyg/editor.css" type="text/css" rel="stylesheet"/>
+    <style type="text/css">
+    .link:hover { cursor:pointer; }
+    </style>
+</head>
+
+<body>
     <script src="style/assets/js/jquery-1.10.2.js"></script>
     <script src="style/assets/js/bootstrap.min.js"></script>
     <script src="style/assets/js/jquery.metisMenu.js"></script>
@@ -19,30 +32,7 @@ if(@$_SESSION['admin'] || @$_SESSION['pengajar']) {
     <script src="style/assets/js/dataTables/jquery.dataTables.js"></script>
     <script src="style/assets/js/dataTables/dataTables.bootstrap.js"></script>
     <script src="style/assets/js/custom-scripts.js"></script>    
-    <script src="style/assets/ckeditor-ckfinder-integration-master/ckeditor/ckeditor.js"></script>
-    <script src="style/assets/ckeditor-ckfinder-integration-master/ckfinder/ckfinder.js"></script>
-    
-    
-    
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><?php cek_session("Halaman Administrator", "Halaman Pengajar"); ?> e-Learning</title>
-    <link href="style/assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="style/assets/ckeditor/contents.css" rel="stylesheet" />
-    <link href="style/assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="style/assets/css/font-awesome.css" rel="stylesheet" />
-    <link href="style/assets/css/custom-styles.css" rel="stylesheet" />
-    <link href='style/assets/css/font-opensans.css' rel='stylesheet' />
-    <link href="style/assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
-    <link href="style/assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
-    <style type="text/css">
-    .link:hover { cursor:pointer; }
-    </style>
-</head>
-
-<body>
-     
-    
+    <script src="style/assets/wyswyg/editor.js"></script>
 
     <div id="wrapper">
         <nav class="navbar navbar-default top-navbar" role="navigation">
@@ -132,7 +122,7 @@ if(@$_SESSION['admin'] || @$_SESSION['pengajar']) {
                             <a href="#"><i class="fa fa-sitemap"></i> Manajemen<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <!--<a href="?page=pengajar" class="<?php if(@$_GET['page'] == 'pengajar') { echo 'active-menu'; } ?>">Manajemen Pengajar</a>-->
+                                    <a href="?page=pengajar" class="<?php if(@$_GET['page'] == 'pengajar') { echo 'active-menu'; } ?>">Manajemen Pengajar</a>
                                 </li>
                                 <li>
                                     <a href="?page=siswa" class="<?php if(@$_GET['page'] == 'siswa') { echo 'active-menu'; } ?>">Manajemen Siswa</a>

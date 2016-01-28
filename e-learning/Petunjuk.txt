@@ -1,0 +1,26 @@
+===========================
+PERSIAPAN :
+1. Install Web Server di komputer Anda semisal XAMPP
+2. Install Web Browser semisal Mozilla Firefox, Google Chrome
+Selanjutnya..
+
+PETUNJUK PEMAKAIAN :
+1. Ekstrak file .zip yang telah kalian dapatkan
+2. Buka folder hasil ekstrakan, di dalamnya ada folder bernama "e-learning", copykan ke direktori htdocs xampp Anda, kalo di komputer saya di C:\xampp\htdocs\
+3. Aktifkan xampp, buka browser, masuk ke localhost/phpmyadmin, dan buat database dengan nama "db_elearning"
+4. Import database yang ada di folder hasil ekstrakan "db_elearning.sql" ke db yang udah kita buat barusan
+5. Coba Anda buka di browser dengan alamat localhost/e-learning/admin
+6. Coba login sebagai admin :
+   a.) - Username : admin
+       - Password : admin
+7. Jika berhasil, Anda sudah bisa menggunakan aplikasi ini.
+Pada halaman admin utama ini Anda bisa melihat username dan password si guru / siswa.
+Untuk login sebagai siswa buka di halaman localhost/e-learning.
+
+=============================
+Jika masih bingung link penjelasan demo : yukcoding.blogspot.com/2015/09/source-code-aplikasi-e-learning-ujian.html
+
+=============================
+Untuk konsultasi dan info lebih lanjut :
+- http://yukcoding.blogspot.com
+- http://fb.com/yukcoding.belajarpemrograman
